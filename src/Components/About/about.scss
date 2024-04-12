@@ -1,0 +1,113 @@
+.overall-about {
+    padding-top: 50px;
+
+    .part-1 {
+        h2 {
+            font-weight: bold;
+        }
+
+        div {
+            h1 {
+                font-weight: bold;
+                margin-left: 20px;
+                font-size: 50px;
+                margin-top: 10px;
+            }
+        }
+
+        >h1 {
+            margin-top: 15px;
+
+            span {
+                color: #854CE6;
+                font-weight: 700;
+            }
+        }
+
+        >div {
+            p {
+                color: #93989E;
+                font-size: 18px;
+                text-indent: 30px;
+                text-align: justify;
+            }
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+
+            .resume-btn {
+                text-align: center;
+                background: linear-gradient(to right, rgb(60, 63, 231), rgb(218, 25, 218));
+                // border: 2px solid white;
+                border: none;
+                padding: 10px 20px;
+                color: white;
+                border-radius: 10px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .part-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >div {
+            width: 75%;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 120%;
+                border: 3px solid #854CE6;
+
+
+                // background-color: red;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 746px) {
+    .overall-about {
+        .row {
+            flex-direction: column-reverse;
+
+            .part-1 {
+                div {
+                    h1 {
+
+                        font-size: 40px;
+                        margin-top: 10px;
+                    }
+                }
+
+                >h1 {
+                    // margin-top: 15px;
+                    font-size: 22px;
+
+                    span {
+                        // font-size: 30px;
+                        color: #854CE6;
+                        font-weight: 800;
+                    }
+                }
+            }
+
+            .part-2 {
+                >div {
+                    height: 270px;
+                }
+            }
+        }
+    }
+}
