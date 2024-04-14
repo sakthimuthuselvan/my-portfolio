@@ -6,22 +6,24 @@ import About from './Components/About/About'
 import Skills from './Components/Skils/Skills'
 import Experience from './Components/Experience/Experience'
 import Projects from './Components/Projects/Projects';
+import Contact from './Components/Contact/Contact';
+
 const App = () => {
   return (
     <div className='overall'>
       <div className='container'>
-      <NavBar />
+        <NavBar />
 
       </div>
 
-   <div style={{paddingTop:80}} className='container'>
-     <About />
-   </div>
-   <Skills />
+      <div style={{ paddingTop: 80 }} className='container'>
+        <About />
+      </div>
+      <Skills />
 
-   <Experience />
-   <Projects />
-
+      <Experience />
+      <Projects />
+      <Contact />
     </div>
   )
 }

@@ -2,9 +2,14 @@ import React, { useEffect, useState } from 'react'
 import "./navbar.scss"
 import { SiCircleci } from "react-icons/si";
 import { CgMenuRightAlt } from "react-icons/cg";
+import { AiOutlineCloseCircle } from "react-icons/ai";
 const NavBar = () => {
     const [screenSize, setScreenSize] = useState('');
+    const [isOpen, setIsOpen] = useState(false);
 
+    const toggleSidebar = () => {
+        setIsOpen(!isOpen);
+    };
     useEffect(() => {
         const handleResize = () => {
             const width = window.innerWidth;
@@ -57,6 +62,7 @@ const NavBar = () => {
                                 <li>Skills</li>
                                 <li>Experience</li>
                                 <li>Projects</li>
+                                <li>Contacts</li>
                             </ul>
                             <div className='github'>
                                 <button>Github Profile</button>
@@ -64,9 +70,24 @@ const NavBar = () => {
                         </>
 
                         :
-                        <div className='d-flex justify-content-end'>
-                            <CgMenuRightAlt   style={{color: "white",
-                     fontSize: 29, fontWeight:"bold"}} />
+                        <div className='menuside'>
+                            <div className='d-flex justify-content-end'>
+                                <CgMenuRightAlt style={{
+                                    color: "white",
+                                    fontSize: 29, fontWeight: "bold"
+                                }} />
+                            </div>
+                            <div className={`custom-sidebar`}>
+                               <div className='d-flex justify-content-between pt-4 px-2'>
+                               <ul>
+                                    <li>Home</li>
+                                    <li>About</li>
+                                    <li>Services</li>
+                                    <li>Contact</li>
+                                </ul>
+                                <p><AiOutlineCloseCircle className='pointer text-white'/></p>
+                               </div>
+                            </div>
                         </div>
                     }
 
