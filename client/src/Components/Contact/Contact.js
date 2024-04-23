@@ -28,7 +28,7 @@ const Contact = () => {
 		const { email, name, message, subject } = formData
 		setShowLoader(true)
 		try {
-			await axios.post('http://127.0.1:4000/send-email', {
+			await axios.post('https://my-portfolio-hnog.onrender.com/send-email', {
 				user_name: name,
 				user_email: email,
 				subject: subject,
