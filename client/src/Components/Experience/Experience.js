@@ -1,9 +1,10 @@
 import React from 'react'
 import "./experience.scss"
 import Milanity from "../../assets/milanity.jpeg"
+
 const Experience = () => {
     return (
-        <div className='container overall-experience'>
+        <div id='experience' className='container overall-experience'>
             <h1>Experience</h1>
 
             <div className='row pt-4'>

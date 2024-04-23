@@ -19,7 +19,7 @@
             margin-top: 15px;
 
             span {
-                color: #854CE6;
+                color: #9923dd;
                 font-weight: 700;
             }
         }
@@ -36,7 +36,7 @@
         .btn {
             display: flex;
             justify-content: center;
-
+            border: none;
             .resume-btn {
                 text-align: center;
                 background: linear-gradient(to right, rgb(60, 63, 231), rgb(218, 25, 218));
@@ -46,6 +46,7 @@
                 color: white;
                 border-radius: 10px;
                 font-weight: 500;
+                outline: none;
             }
         }
     }

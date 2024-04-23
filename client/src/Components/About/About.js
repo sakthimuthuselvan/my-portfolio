@@ -5,8 +5,8 @@ const About = () => {
 
     const [displayText, setDisplayText] = useState('');
     const [index, setIndex] = useState(0);
-    const [text, setText] = useState("Full Stack Developer");
-    const [speed, setSpeed] = useState(100);
+    const [text,] = useState("Full Stack Developer");
+    const [speed,] = useState(100);
     const [isDeleting, setIsDeleting] = useState(false);
 
     useEffect(() => {
@@ -32,7 +32,7 @@ const About = () => {
 
 
     return (
-        <div className='overall-about'>
+        <div id="about" className='overall-about'>
 
             <div className='row'>
                 <div className='part-1 col-lg-7 col-md-6 col-sm-12'>
@@ -40,10 +40,11 @@ const About = () => {
                     <div>
                         <h1>Sakthi Muthuselvan</h1>
                     </div>
-                    <h1>I am a <span>{displayText+"|"}</span></h1>
+                    <h1>I am a <span>{displayText + "|"}</span></h1>
                     <div>
                         <p>
-                        I am a skilled React.js developer with 1.5 years of experience working at Milanity Private Limited. During my time there, I've been instrumental in developing efficient and dynamic front-end solutions using React.js. My expertise lies in building responsive user interfaces, optimizing performance, and integrating with backend systems to create seamless web applications. I thrive in collaborative environments, where I can leverage my problem-solving skills and passion for clean, maintainable code to deliver high-quality software products.                        </p>
+                            Dedicated React JS developer skilled in MERN stack development, proficient in building dynamic, responsive web applications. With hands-on experience and impactful projects, I seamlessly integrate cutting-edge technologies for intuitive user experiences. Explore my portfolio for firsthand demonstrations of my expertise.
+                        </p>
                     </div>
                     <div className='btn'>
                         <button className='resume-btn'>Check Resume</button>
@@ -51,10 +52,10 @@ const About = () => {
                 </div>
 
                 <div className='part-2 col-lg-5 col-md-6 col-sm-12'>
-                   <div>
-                    {/* <h1>sakthi</h1> */}
-                    <img src={Myimg} alt='image'/>
-                   </div>
+                    <div>
+                        {/* <h1>sakthi</h1> */}
+                        <img src={Myimg} alt='my_image' />
+                    </div>
                 </div>
             </div>
         </div>

@@ -21,8 +21,8 @@
             align-items: center;
 
             // .icon {
-                // color: white;
-                // font-size: 29px;
+            // color: white;
+            // font-size: 29px;
             // }
 
             h3 {
@@ -74,30 +74,55 @@
 
     }
 
-    .menuside{
+    .menuside {
         position: relative;
     }
 
-    .custom-sidebar{
-        background-color: brown;
+    .custom-sidebar {
+        background-color: #191924;
         position: fixed;
-        left: 25%;
-        width: 75vw;
-        height: 100%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-300px);
         top: 0;
-        transition: left 0.3s ease;
-        // right: 50%;
-
-
-        // position: fixed;
-        // top: 0;
-        // left: -250px; /* Initially hide the sidebar off the screen */
-        // width: 250px;
-        // height: 100%;
-        // background-color: #333;
-        // transition: left 0.3s ease;
+        padding: 20px;
+        transition: 0.3s;
     }
 
+    //  Link{
+    //     text-decoration: none;
+    //     color: white;
+    // }
+//    ul .a:link { text-decoration: none; }
+//    ul .a:visited { text-decoration: none; }
+//    ul .a:hover { text-decoration: none; }
+//    ul .a:active { text-decoration: none; }
 
-    
+
+   .custom-link {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set default text color */
+  }
+  
+  .custom-link.active {
+    color: white; /* Change text color when Link is active */
+  }
+    ul li {
+        text-decoration: none;
+        list-style: none;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+.comeNav{
+    background-color: #191924;
+    position: fixed;
+    left: 0;
+    width: 100%;
+    transform: translateY(0);
+    top: 0;
+    padding: 20px;
+    transition: 0.5s ease; 
+}
+
 }

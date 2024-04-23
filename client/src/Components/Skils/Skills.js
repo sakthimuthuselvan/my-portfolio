@@ -16,7 +16,7 @@ import Typescript from "../../assets/typescript.png"
 
 const Skills = () => {
     return (
-        <div className='pt-5'>
+        <div id='skills' className='pt-5'>
             <div className='overall-skills pt-4'>
                 <div className='container'>
                     <h1>Skills</h1>
