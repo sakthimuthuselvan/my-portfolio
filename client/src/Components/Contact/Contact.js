@@ -57,6 +57,8 @@ const Contact = () => {
 	}
 
 	const submitContact = () => {
+		const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 		if (!formData.name) {
 			toast.error("Name field is required", {
 				position: "top-right",
@@ -65,6 +67,11 @@ const Contact = () => {
 
 		} else if (!formData.email) {
 			toast.error("Email field is required", {
+				position: "top-right",
+				autoClose: 2000
+			});
+		} else if (!regex.test(formData.email)) {
+			toast.error("Please enter vaild email", {
 				position: "top-right",
 				autoClose: 2000
 			});
@@ -104,7 +111,7 @@ const Contact = () => {
 									onChange={handleChange}
 								/>
 								<input
-									type='text'
+									type='email'
 									autoComplete='off'
 									placeholder='Email'
 									name='email'
